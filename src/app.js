@@ -71,7 +71,7 @@ form.addEventListener("submit", function(event) {
     myAlert.classList.remove("d-block");
   }
   //VALIDACIÓN DE STATE
-  if (state.value === "preference") {
+  if (validator.isEmpty(state.value)) {
     state.classList.add("alert-danger");
     myAlert.classList.add("d-block");
   } else {
